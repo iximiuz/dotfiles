@@ -1,0 +1,6 @@
+[submodule ".vim/bundle/vim-gitgutter"]
+	path = .vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule ".vim/bundle/vim-searchindex"]
+	path = .vim/bundle/vim-searchindex
+	url = https://github.com/google/vim-searchindex

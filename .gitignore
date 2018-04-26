@@ -1,0 +1,6 @@
+/*
+!/.gitignore
+!/.bash_profile
+!/.vim/
+/.vim/.netrwhist
+!/.vimrc
