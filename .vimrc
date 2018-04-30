@@ -22,7 +22,7 @@ set softtabstop=4
 set shiftwidth=2  " when indenting with '>', use 2 spaces width
 set expandtab     " On pressing tab, insert 4 spaces
 
-let &grepprg='grep --exclude-dir .git --exclude-dir node_modules --exclude-dir --exclude *.swp dist -n $* /dev/null'
+let &grepprg='grep --exclude-dir .git --exclude-dir node_modules --exclude-dir dist --exclude *.swp -n $* /dev/null'
 
 :nnoremap gr :grep! -H -r <cword> * <CR><CR>:copen<CR>
 :nnoremap <leader>r :copen<CR>
