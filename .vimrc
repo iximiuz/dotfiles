@@ -24,8 +24,11 @@ set expandtab     " On pressing tab, insert 4 spaces
 
 let &grepprg='grep --exclude-dir .git --exclude-dir node_modules --exclude-dir dist --exclude *.swp -n $* /dev/null'
 
-:nnoremap gr :grep! -H -r <cword> * <CR><CR>:copen<CR>
-:nnoremap <leader>r :copen<CR>
+nnoremap gr :grep! -H -r <cword> * <CR><CR>:copen<CR>
+nnoremap <leader>r :copen<CR>
+nnoremap <leader>a :cclose<CR>
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+
 
 execute pathogen#infect() 
-
