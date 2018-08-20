@@ -1,0 +1,16 @@
+[credential]
+	helper = osxkeychain
+[http]
+	sslVerify = true
+[mergetool]
+	prompt = false
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+	trustExitCode = true
+[alias]
+	d = difftool
