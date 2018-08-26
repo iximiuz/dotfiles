@@ -53,3 +53,6 @@ export NVM_DIR="$HOME/.nvm"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
+# Setting PATH for Go
+PATH="$HOME/go/bin:${PATH}"
+export PATH
