@@ -34,3 +34,8 @@ map <C-m> :cprevious<CR>
 
 
 execute pathogen#infect() 
+
+" Go
+nnoremap gi :GoImplements<CR>
+nnoremap gc :GoCallees<CR>
+
