@@ -4,3 +4,9 @@
 [submodule ".vim/bundle/vim-searchindex"]
 	path = .vim/bundle/vim-searchindex
 	url = https://github.com/google/vim-searchindex
+[submodule ".vim/bundle/command-t"]
+	path = .vim/bundle/command-t
+	url = https://github.com/wincent/command-t.git
+[submodule ".vim/bundle/vim-go"]
+	path = .vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go
