@@ -5,6 +5,7 @@ let mapleader = ","
 set number
 set showcmd   "shows current command in the statusline
 set exrc      "read <cwd>/.vimrc
+set cursorline
 
 set hlsearch  "highlights search results
 hi Search ctermbg=LightYellow
