@@ -8,6 +8,8 @@ export VISUAL=/usr/bin/vim
 # bash
 alias mc='LANG=en_EN.UTF-8 mc'
 alias ll='ls -lah'
+alias duh="du -h"
+alias duh1="du -d 1 -h"
 
 # iterm2
 alias iterm2_tab_color_red='echo -e "\033]6;1;bg;red;brightness;255\a"'
