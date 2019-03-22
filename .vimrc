@@ -30,6 +30,7 @@ nnoremap gr :grep! -H -r <cword> * <CR><CR>:copen<CR>
 nnoremap gb :ls<CR>:b<Space>
 nnoremap <leader>r :copen<CR>
 nnoremap <leader>a :cclose<CR>
+nnoremap <leader>s :write<CR>
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 
