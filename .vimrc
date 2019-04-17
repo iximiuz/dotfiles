@@ -31,8 +31,10 @@ nnoremap gb :ls<CR>:b<Space>
 nnoremap <leader>r :copen<CR>
 nnoremap <leader>a :cclose<CR>
 nnoremap <leader>s :write<CR>
+nnoremap <leader>q :noh<CR>
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
+map <C-t> :tabnext<CR>
 
 
 execute pathogen#infect() 
