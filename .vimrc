@@ -16,7 +16,7 @@ set laststatus=2
 set statusline=%f\:%l\:%c
 
 highlight OverLength ctermbg=darkblue ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+match OverLength /\%81v/
 
 filetype plugin indent on
 set tabstop=4     " show existing tab with 4 spaces width
