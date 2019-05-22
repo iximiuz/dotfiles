@@ -55,6 +55,11 @@ export NVM_DIR="$HOME/.nvm"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
-# Setting PATH for Go
+# Go
 PATH="$HOME/go/bin:${PATH}"
 export PATH
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+
