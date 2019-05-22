@@ -28,8 +28,10 @@ let &grepprg='grep --exclude-dir .git --exclude-dir node_modules --exclude-dir d
 
 nnoremap gr :grep! -H -r <cword> * <CR><CR>:copen<CR>
 nnoremap gb :ls<CR>:b<Space>
-nnoremap <leader>r :copen<CR>
+nnoremap <leader>c :copen<CR>
 nnoremap <leader>a :cclose<CR>
+nnoremap <leader>l :lopen<CR>
+nnoremap <leader>k :lclose<CR>
 nnoremap <leader>s :write<CR>
 nnoremap <leader>q :noh<CR>
 map <C-n> :cnext<CR>
@@ -49,7 +51,20 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_auto_jump = 0
+
+hi SpellBad term=reverse ctermbg=red
+
+" Rust
+" Racer
+set hidden
+let g:racer_cmd = "~/.cargo/bin/racer"
+let g:racer_experimental_completer = 1
+au FileType rust nmap gd <Plug>(rust-def)
+au FileType rust nmap gs <Plug>(rust-def-split)
+au FileType rust nmap gx <Plug>(rust-def-vertical)
+au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
