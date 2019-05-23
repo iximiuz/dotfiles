@@ -13,7 +13,7 @@ hi Search ctermfg=Red
 hi QuickFixLine term=reverse ctermbg=52  "change QuickFix selected line color
 
 set laststatus=2
-set statusline=%f\:%l\:%c
+set statusline=%f\:%l\:%c\ \[%L\]
 
 highlight OverLength ctermbg=darkblue ctermfg=white guibg=#592929
 match OverLength /\%81v/
