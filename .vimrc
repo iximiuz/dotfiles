@@ -7,6 +7,8 @@ set showcmd   "shows current command in the statusline
 set exrc      "read <cwd>/.vimrc
 set cursorline
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 set hlsearch  "highlights search results
 hi Search ctermbg=LightYellow
 hi Search ctermfg=Red
@@ -34,6 +36,9 @@ nnoremap <leader>l :lopen<CR>
 nnoremap <leader>k :lclose<CR>
 nnoremap <leader>s :write<CR>
 nnoremap <leader>q :noh<CR>
+nnoremap <leader>e :Ex<CR>
+nnoremap <leader>E :Vex<CR>
+nnoremap <leader>w :q<CR>
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 map <C-t> :tabnext<CR>
@@ -46,7 +51,7 @@ nnoremap gi :GoImplements<CR>
 nnoremap gc :GoCallees<CR>
 
 " syntastic
-set statusline+=%#warningmsg#
+set statusline+=%=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 

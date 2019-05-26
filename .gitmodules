@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/vim-searchindex"]
 	path = .vim/bundle/vim-searchindex
 	url = https://github.com/google/vim-searchindex
-[submodule ".vim/bundle/command-t"]
-	path = .vim/bundle/command-t
-	url = https://github.com/wincent/command-t
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go
@@ -22,3 +19,6 @@
 [submodule ".vim/bundle/vim-racer"]
 	path = .vim/bundle/vim-racer
 	url = git@github.com:racer-rust/vim-racer.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
