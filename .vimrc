@@ -10,7 +10,7 @@ set cursorline
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set hlsearch  "highlights search results
-hi Search ctermbg=LightYellow
+hi Search ctermbg=DarkGray
 hi Search ctermfg=Red
 hi QuickFixLine term=reverse ctermbg=52  "change QuickFix selected line color
 
