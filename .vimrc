@@ -77,6 +77,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Go
 nnoremap gi :GoImplements<CR>
 nnoremap gc :GoCallees<CR>
+let g:go_def_mode = 'godef'
 
 " syntastic
 set statusline+=%=%#warningmsg#
