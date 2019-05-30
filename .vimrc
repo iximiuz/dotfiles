@@ -35,9 +35,9 @@ nnoremap <leader>l :lopen<CR>
 nnoremap <leader>k :lclose<CR>
 nnoremap <leader>s :write<CR>
 nnoremap <leader>q :noh<CR>
+nnoremap <leader>w :q<CR>
 nnoremap <leader>e :Ex<CR>
 nnoremap <leader>E :Vex<CR>
-nnoremap <C-w> :q<CR>
 
 "move lines around
 nnoremap <leader>k :m-2<cr>==
