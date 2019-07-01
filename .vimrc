@@ -29,25 +29,27 @@ let &grepprg='grep --exclude-dir .git --exclude-dir node_modules --exclude-dir d
 
 nnoremap gr :grep! -H -r <cword> * <CR><CR>:copen<CR>
 nnoremap gb :ls<CR>:b<Space>
-nnoremap <leader>c :copen<CR>
-nnoremap <leader>a :cclose<CR>
-nnoremap <leader>l :lopen<CR>
-nnoremap <leader>k :lclose<CR>
 nnoremap <leader>s :write<CR>
 nnoremap <leader>q :noh<CR>
 nnoremap <leader>w :q<CR>
 nnoremap <leader>e :Ex<CR>
 nnoremap <leader>E :Vex<CR>
 
+map <C-t> :tabnext<CR>
+
+nnoremap <leader>c :copen<CR>
+nnoremap <leader>a :cclose<CR>
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+
+nnoremap <leader>l :lopen<CR>
+nnoremap <leader>k :lclose<CR>
+
 "move lines around
 nnoremap <leader>k :m-2<cr>==
 nnoremap <leader>j :m+<cr>==
 xnoremap <leader>k :m-2<cr>gv=gv
 xnoremap <leader>j :m'>+<cr>gv=gv
-
-map <C-n> :cnext<CR>
-map <C-m> :cprevious<CR>
-map <C-t> :tabnext<CR>
 
 "move to the split in the direction shown, or create a new split
 nnoremap <silent> <C-h> :call WinMove('h')<cr>

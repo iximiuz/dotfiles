@@ -15,7 +15,7 @@ export LC_TIME="en_US.UTF-8"
 # -== aliases ==-
 # bash
 alias mc='LANG=en_EN.UTF-8 mc'
-alias ll='ls -lah'
+alias ll='ls -lahG'
 alias duh="du -h"
 alias duh1="du -d 1 -h"
 
