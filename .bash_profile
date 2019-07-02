@@ -14,6 +14,7 @@ export LC_TIME="en_US.UTF-8"
 
 # -== aliases ==-
 # bash
+alias vim='`brew --prefix`/bin/vim'
 alias mc='LANG=en_EN.UTF-8 mc'
 alias ll='ls -lahG'
 alias duh="du -h"
