@@ -42,9 +42,6 @@ nnoremap <leader>a :cclose<CR>
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 
-nnoremap <leader>l :lopen<CR>
-nnoremap <leader>k :lclose<CR>
-
 "move lines around
 nnoremap <leader>k :m-2<cr>==
 nnoremap <leader>j :m+<cr>==
