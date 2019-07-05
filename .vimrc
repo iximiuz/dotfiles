@@ -35,12 +35,18 @@ nnoremap <leader>w :q<CR>
 nnoremap <leader>e :Ex<CR>
 nnoremap <leader>E :Vex<CR>
 
-map <C-t> :tabnext<CR>
-
 nnoremap <leader>c :copen<CR>
 nnoremap <leader>a :cclose<CR>
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
+
+"navigate in command mode - emacs style
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+cnoremap <C-b> <Left>
+cnoremap <C-f> <Right>
 
 "move lines around
 nnoremap <leader>k :m-2<cr>==
