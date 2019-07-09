@@ -76,8 +76,13 @@ endfunction
 
 execute pathogen#infect() 
 
+" ack.vim
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " Ctrl-p
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_match_window = 'min:4,max:10,results:100'
 
 " Go
 nnoremap gi :GoImplements<CR>
