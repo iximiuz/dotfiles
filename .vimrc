@@ -10,6 +10,7 @@ set ttyfast   "more characters will be sent to the screen for redrawing
 set wildmenu  "a better menu in command mode
 set wildmode=longest:full,full
 set colorcolumn=81
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 set hlsearch  "highlights search results
 hi Search ctermbg=DarkGray
@@ -47,32 +48,6 @@ cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
-
-"move lines around
-nnoremap <leader>k :m-2<cr>==
-nnoremap <leader>j :m+<cr>==
-xnoremap <leader>k :m-2<cr>gv=gv
-xnoremap <leader>j :m'>+<cr>gv=gv
-
-"move to the split in the direction shown, or create a new split
-nnoremap <silent> <C-h> :call WinMove('h')<cr>
-nnoremap <silent> <C-j> :call WinMove('j')<cr>
-nnoremap <silent> <C-k> :call WinMove('k')<cr>
-nnoremap <silent> <C-l> :call WinMove('l')<cr>
-
-function! WinMove(key)
-  let t:curwin = winnr()
-  exec "wincmd ".a:key
-  if (t:curwin == winnr())
-    if (match(a:key,'[jk]'))
-      wincmd v
-    else
-      wincmd s
-    endif
-    exec "wincmd ".a:key
-  endif
-endfunction
-
 
 execute pathogen#infect() 
 
