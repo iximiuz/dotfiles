@@ -99,6 +99,7 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_auto_jump = 0
+let g:syntastic_go_checkers = ['govet', 'errcheck', 'go'] " Go support
 
 hi SpellBad term=reverse ctermbg=red
 
