@@ -21,10 +21,10 @@ set laststatus=2
 set statusline=%f\:%l\:%c\ \[%L\]
 
 filetype plugin indent on
-set tabstop=4     " show existing tab with 4 spaces width
-set softtabstop=4
-set shiftwidth=4  " when indenting with '>', use 2 spaces width
-set expandtab     " On pressing tab, insert 4 spaces
+set tabstop=2     " show existing tab with 2 spaces width
+set softtabstop=2
+set shiftwidth=2  " when indenting with '>', use 2 spaces width
+set expandtab     " On pressing tab, insert 2 spaces
 
 set completeopt-=preview
 
